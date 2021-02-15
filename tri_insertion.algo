@@ -10,7 +10,7 @@ BEGIN
    FOR i FROM 1 TO tab.length-1 DO
        temp := tab[i];
        j := i -1;
-       WHILE ((j > 0) and (tabtableau[j] > temp)) DO
+       WHILE ((j > 0) and (tab[j] > temp)) DO
             tab[j + 1] :=  tab[j];              
             j := j - 1;
         END_WHILE
